@@ -1,6 +1,6 @@
 import mysql.connector
 
-con = mysql.connector.connect(host='localhost', user='root', passwd='miranha123', port=3306 )
+con = mysql.connector.connect(host='localhost', user='', passwd='', port=3306 )
 cursor = con.cursor()
 
 criar_tabelas = '''SET NAMES latin1;
