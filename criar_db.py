@@ -23,6 +23,9 @@ cursor.executemany(
       'INSERT INTO CRUD.users (identidade, nome, idade, email) VALUES (%s, %s, %s, %s)',
       [
             ('1', 'Elias Gabriel', '16', 'elias@gmail.com'),
+            ('2', 'Pedro Marcelo', '45', 'pedro@gmail.com'),
+            ('3', 'João Matias', '27', 'joao@gmail.com'),
+            ('4', 'Fernando Alves', '89', 'fernando@gmail.com'),
       ])
 
 con.commit()
@@ -37,5 +40,6 @@ for linha in linhas:
     print('NOME:', linha[1])
     print('IDADE:', linha[2])
     print('EMAIL:', linha[3])
+    print('\n')
 
 cursor.close()
